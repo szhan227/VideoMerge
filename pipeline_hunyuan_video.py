@@ -967,7 +967,7 @@ class HunyuanVideoPipeline(DiffusionPipeline, HunyuanVideoLoraLoaderMixin):
             freq_filter = butterworth_low_pass_filter(latents.shape).to(latents.dtype).to(latents.device)
             z_rand = torch.randn_like(latents)
             # Perform the progressive noise adding ONLY to the high frequency components INSIDE the freq_mix_3d method!!!!
-            latents = freq_mix_3d(latents, z_rand, LPF=freq_filter) # 1 - freq_filter is high pass filter
+            latents = freq_mix_3d(latents, z_rand, LPF=freq_filter, max_w=0.1) # 1 - freq_filter is high pass filter
 
 
         # 6. Prepare guidance condition
