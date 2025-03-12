@@ -29,7 +29,10 @@ Run the following code to generate a long video. See parse_arg() function in kst
 python long_video_inference.py --num_chunks 7 --resolution 320p --high_freq_merge
 ```
 With default configuration, the model is expected to genereate a 445-frame video of 320p resolution in 22 min.
+
 Put your long prompt in the ./prompt.txt file.
+
 You may change the num_chunks parameters to longer(each chunk is 61 frames).
+
 You may also chanege the resolution to 720p, but it will takes much longer to generate a long video(around 7 hours for num_chunks=5).
 
