@@ -34,5 +34,5 @@ Put your long prompt in the ./prompt.txt file.
 
 You may change the num_chunks parameters to longer(each chunk is 61 frames).
 
-You may also chanege the resolution to 720p, but it will takes much longer to generate a long video(around 7 hours for num_chunks=5).
+You may also chanege the resolution to 720p, but it will takes much longer to generate a long video(around 7 hours for num_chunks=7).
 
