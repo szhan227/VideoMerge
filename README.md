@@ -24,7 +24,7 @@ pip install -r requirements.txt
 ```
 
 ## Inference
-Run the following code to generate a long video. See parse_arg() function in kstep_search.py and config files in ./configs.
+Run the following code to generate a long video. See parse_arg() function in long_video_inference.py.
 ```
 python long_video_inference.py --num_chunks 7 --resolution 320p --high_freq_merge
 ```
